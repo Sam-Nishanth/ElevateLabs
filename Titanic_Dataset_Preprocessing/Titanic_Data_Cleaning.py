@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler
-df = pd.read_csv(r"Titanic-Dataset.csv")
+df = pd.read_csv(r"..\DataSets\Titanic-Dataset.csv")
 print(df.head())
 print(df.info())
 print(df.isnull().sum())

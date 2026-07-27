@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
-df = pd.read_csv("Titanic-Dataset.csv")
+df = pd.read_csv(r"..\DataSets\Titanic-Dataset.csv")
 print("First Five Rows")
 print(df.head())
 print("\nDataset Information")
