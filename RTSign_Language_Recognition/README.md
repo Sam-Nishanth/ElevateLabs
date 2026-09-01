@@ -18,7 +18,16 @@ Real-time Indian Sign Language and alphabet recognition using MediaPipe, Random 
 Open PowerShell:
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/RTSign_Language_Recognition.git
+git clone --filter=blob:none --no-checkout https://github.com/Sam-Nishanth/ElevateLabs.git
+
+cd ElevateLabs
+
+git sparse-checkout init --cone
+
+git sparse-checkout set RTSign_Language_Recognition
+
+git checkout
+
 cd RTSign_Language_Recognition
 ```
 
@@ -130,11 +139,13 @@ Each folder represents an ISL sign class.
 
 ### Public ISL dataset alternatives
 
+[Sign Language Dataset](https://data.mendeley.com/public-files/datasets/dtg9s785v8/files/e575af73-1d81-44ff-82ec-07786b5e5d19/file_downloaded)
+
 If you do not have the original project dataset, you can obtain publicly available ISL datasets for retraining.
 
 ### INCLUDE Dataset
 
-[INCLUDE dataset – AI4Bharat / Zenodo information](https://data.niaid.nih.gov/resources?id=zenodo_4010759&utm_source=chatgpt.com)
+[INCLUDE dataset – AI4Bharat / Zenodo information](https://www.kaggle.com/datasets/grassknoted/asl-alphabet?resource=download)
 
 The INCLUDE dataset contains Indian Sign Language videos and provides downloadable train/test data. It is a **different dataset** from the original dataset used by this project, so its classes and training configuration will not exactly match the existing model.
 
@@ -288,7 +299,15 @@ The application can still run without a GPU.
 For a system where the datasets are already available:
 
 ```powershell
-git clone <repo URL>
+git clone --filter=blob:none --no-checkout https://github.com/Sam-Nishanth/ElevateLabs.git
+
+cd ElevateLabs
+
+git sparse-checkout init --cone
+
+git sparse-checkout set RTSign_Language_Recognition
+
+git checkout
 
 cd RTSign_Language_Recognition
 
@@ -343,7 +362,15 @@ If you already have the trained models, you do **not** need to regenerate the fe
 Just:
 
 ```powershell
-git clone https://github.com/YOUR_USERNAME/RTSign_Language_Recognition.git
+git clone --filter=blob:none --no-checkout https://github.com/Sam-Nishanth/ElevateLabs.git
+
+cd ElevateLabs
+
+git sparse-checkout init --cone
+
+git sparse-checkout set RTSign_Language_Recognition
+
+git checkout
 
 cd RTSign_Language_Recognition
 
